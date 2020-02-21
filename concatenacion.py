@@ -1,6 +1,7 @@
 import numpy as np
 from PIL import Image
 from archivos import leer_imagen, escribir_imagen
+import api
 
 
 def concatenar_horizontal(imagenes):
@@ -16,3 +17,5 @@ imagen2 = leer_imagen('2.jpg')
 
 escribir_imagen('concatenada-vertical.jpg', concatenar_vertical([imagen1, imagen2]))    
 escribir_imagen('concatenada-horizontal.jpg', concatenar_horizontal([imagen1, imagen2]))    
+escribir_imagen('concatenada-horizontal2.jpg', concatenar_horizontal([imagen1, imagen1]))
+
